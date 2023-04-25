@@ -9,7 +9,7 @@ from PIL import Image
 if 'img_bytes' not in st.session_state:
     st.session_state['img_bytes'] = None
 
-WEIGHT_DIR = os.getcwd() + "./googlenetmodel.pth" 
+WEIGHT_DIR =  "./app/corn2/googlenetmodel.pth" 
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
